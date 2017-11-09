@@ -1,0 +1,65 @@
+<html>
+<meta content="text/html;charset=UTF-8" />
+<head>
+	<title>Se Connecter</title>
+</head>
+<body>
+	<form>
+		<div>
+		<table>
+		<tr>
+		<td><label>Civilite* : </label></td>
+		<td><label>Mme/Mlle</label>
+		<input type="radio" name="civilite" required />
+		<label>M.</label>
+		<input type="radio" name="civilite"/></td>
+		</tr>
+		<tr>
+		<td><label>Prénom</label></td>
+		<td><input type="text" id="nom" maxlength="20"/></td>
+		</tr>
+		<tr>
+		<td><label>Nom*</label></td>
+		<td><input type="text" id="nom" pattern="[A-Za-z].{4,9}" required /><font color="gray" size=1> 5 à 10 caractères max.</font></td>
+		</tr>
+		<tr>
+		<td><label>Adresse e-mail</label></td>
+		<td><input type="email" placeholder="you@example.com"/></td>
+		</tr>
+		<tr>
+		<td><label>Telephone</label></td>
+		<td><input pattern="[0-9].{8,12}"/><font color="gray" size=1> Insérez de 8 à 12 caractères</font></td>
+		</tr>
+		<tr>
+		<td><label>Date de Naissance</label></td>
+		<td><input type="date"/></td>
+		</tr>
+		<tr>
+		<td><label>Couleur Favorite</label></td>
+		<td><input type="color"></td>
+		</tr>
+		<tr>
+		<td><label>Newsletter :</label></td>
+		<td><label>Oui</label>
+		<input type="radio" name="Newsletter"/>
+		<label>Non</label>
+		<input type="radio" name="Newsletter"/></td>
+		</tr>
+		<tr>
+		<td><label>Photo de Profil</label></td>
+		<td><input type="file" accept="image/png"  /></td>
+		</tr>
+		<tr>
+		<td><label>Commentaire</label></td>
+		<td><textarea rows="2" cols="20">Ecrivez</textarea></td>
+		</tr>
+		</table>
+		</div>
+		<div>
+		<button>Valider</button>
+		</div>
+	</form>
+
+</body>
+
+</html>
